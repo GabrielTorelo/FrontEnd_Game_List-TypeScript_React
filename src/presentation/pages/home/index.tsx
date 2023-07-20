@@ -1,4 +1,4 @@
-import "./styles";
+import "./styles.scss";
 import { useState } from "react";
 
 function Home() {
