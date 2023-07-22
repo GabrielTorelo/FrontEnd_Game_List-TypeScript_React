@@ -1,0 +1,17 @@
+@import "../../styles/icons.scss";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 96vw;
+    height: 10vh;
+    padding: 0 2vw 0 2vw;
+
+    .imgLogo {
+        width: 8vh;
+        height: 8vh;
+        background-image: url($iconLogo);
+    }
+}
