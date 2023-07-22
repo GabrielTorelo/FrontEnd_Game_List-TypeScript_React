@@ -1,0 +1,45 @@
+@import "../../styles/colors.scss";
+
+$iconMoon: "../../assets/moon.png";
+$iconSun: "../../assets/sun.png";
+
+.toggleSwitch {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 125px;
+    text-indent: -9999px;
+    border-radius: 100px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 12px;
+        background-size: cover;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+}
+
+.light {
+    background-color: $whiteSmoke;
+
+    &:after {
+        left: 14px;
+        background-image: url($iconSun);
+        background-color: $charcoal;
+    }
+}
+
+.dark {
+    background-color: $gunmetal;
+
+    &:after {
+        left: calc(55% - 5px);
+        background-image: url($iconMoon);
+        background-color: $whiteSmoke;
+    }
+}
