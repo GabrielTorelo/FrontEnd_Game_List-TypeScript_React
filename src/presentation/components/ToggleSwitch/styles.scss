@@ -1,23 +1,23 @@
 @import "../../styles/colors.scss";
 
-$iconMoon: "../../assets/moon.png";
-$iconSun: "../../assets/sun.png";
+$iconMoon: "../../assets/moon.svg";
+$iconSun: "../../assets/sun.svg";
 
 .toggleSwitch {
     cursor: pointer;
     display: block;
     position: relative;
-    width: 250px;
-    height: 125px;
+    width: 8vh;
+    height: 4vh;
     text-indent: -9999px;
     border-radius: 100px;
 
     &:after {
         content: "";
         position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 12px;
+        width: 3.20vh;
+        height: 3.20vh;
+        top: 0.38vh;
         background-size: cover;
         border-radius: 90px;
         transition: 0.3s;
@@ -28,7 +28,7 @@ $iconSun: "../../assets/sun.png";
     background-color: $whiteSmoke;
 
     &:after {
-        left: 14px;
+        left: 0.44vh;
         background-image: url($iconSun);
         background-color: $charcoal;
     }
@@ -38,7 +38,7 @@ $iconSun: "../../assets/sun.png";
     background-color: $gunmetal;
 
     &:after {
-        left: calc(55% - 5px);
+        left: calc(55% - 0.15vh);
         background-image: url($iconMoon);
         background-color: $whiteSmoke;
     }
