@@ -2,12 +2,16 @@
 $iconLogo: "/assets/logo.svg";
 
 /* ToggleSwitch */
-$iconMoon: "../../assets/moon.svg";
-$iconSun: "../../assets/sun.svg";
+$iconMoon: "../../assets/default/moon.svg";
+$iconSun: "../../assets/default/sun.svg";
 
 /* Links */
-$iconGitHubDark: "../../assets/gitHubDark.svg";
-$iconGitHubLight: "../../assets/gitHubLight.svg";
-$iconGitLab: "../../assets/gitLab.svg";
-$iconLinkedIn: "../../assets/linkedIn.svg";
-$iconPostman: "../../assets/postman.svg";
+$iconGitHubDark: "../../assets/dark/gitHub.svg";
+$iconGitHubLight: "../../assets/light/gitHub.svg";
+$iconGitLab: "../../assets/default/gitLab.svg";
+$iconLinkedIn: "../../assets/default/linkedIn.svg";
+$iconPostman: "../../assets/default/postman.svg";
+
+/* GameList */
+$iconArrowDownDark: "../../assets/dark/arrowDown.svg";
+$iconArrowDownLight: "../../assets/light/arrowDown.svg";
