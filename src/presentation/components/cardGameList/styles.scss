@@ -1,0 +1,63 @@
+@import "../../styles/icons.scss";
+
+.gameList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 92vw;
+    height: auto;
+    margin: 2vh 4vw 0 4vw;
+
+    .gameListTop {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 5vh;
+
+        h3 {
+            font-size: 3vh;
+            margin: auto;
+            user-select: none;
+        }
+
+        .arrowDown {
+            position: absolute;
+            width: 4vh;
+            height: 3.6vh;
+            margin-left: 5vw;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        @media (prefers-color-scheme: light) {
+            .arrowDown {
+                background-image: url($iconArrowDownLight);
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .arrowDown {
+                background-image: url($iconArrowDownDark);
+            }
+        }
+    }
+
+    .gameListBelow {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .space {
+            height: 2vh;
+            width: 100%;
+            background-color: transparent;
+        }
+    }
+}
