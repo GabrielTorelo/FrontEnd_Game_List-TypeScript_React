@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GameMinModel } from '../../../domain/models/gameMinModel';
+import { GameMinModel } from '../../../domain/models/gameModel';
 import StarRating from '../StarRating';
 import './styles.scss';
 
