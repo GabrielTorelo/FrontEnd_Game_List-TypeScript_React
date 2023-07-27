@@ -1,11 +1,8 @@
 import React from 'react';
+import { StarRatingModel } from '../../../domain/models/gameModel';
 import './styles.scss';
 
-type StarRatingProps = {
-    score: number
-}
-
-const StarRating: React.FC<StarRatingProps> = ({ score }) => {
+const StarRating: React.FC<StarRatingModel> = ({ score }) => {
     let wholeStars = "★".repeat(Math.round(score));
     let halfStars = "☆".repeat(5 - Math.round(score));
 
