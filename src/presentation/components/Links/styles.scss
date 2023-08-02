@@ -16,16 +16,4 @@
     .postman {
         @include iconStyle(0, $iconPostman);
     }
-
-    @media (prefers-color-scheme: light) {
-        .gitHub {
-            @include iconStyle(2vw, $iconGitHubLight);
-        }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        .gitHub {
-            @include iconStyle(2vw, $iconGitHubDark);
-        }
-    }
 }
