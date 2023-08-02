@@ -21,3 +21,14 @@ $iconPostman: $default+"postman.svg";
 /* GameList */
 $iconArrowDownDark: $dark+"arrowDown.svg";
 $iconArrowDownLight: $light+"arrowDown.svg";
+
+
+// Icon Mixins Styles //
+@mixin iconStyle($margin, $image) {
+    width: 4vh;
+    height: 4vh;
+    margin-right: $margin;
+    background-image: url($image);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
