@@ -30,18 +30,6 @@
             background-repeat: no-repeat;
             background-size: contain;
         }
-
-        @media (prefers-color-scheme: light) {
-            .arrowDown {
-                background-image: url($iconArrowDownLight);
-            }
-        }
-
-        @media (prefers-color-scheme: dark) {
-            .arrowDown {
-                background-image: url($iconArrowDownDark);
-            }
-        }
     }
 
     .gameListBelow {
