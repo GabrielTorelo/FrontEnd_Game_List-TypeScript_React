@@ -7,13 +7,18 @@ const ToggleSwitch: React.FC<IColorSchemeContextModel> = ({ mode, dispatch }) =>
     const reverseMode = !mode;
     const [switchState, handleOnChange] = useToggleState(reverseMode);
 
+    const handleChange = () => {
+        handleOnChange();
+        dispatch(switchState);
+    };
+
     return (
         <label className={`toggleSwitch ${switchState ? "light" : "dark"}`} htmlFor="checkbox">
             <input
                 id="checkbox"
                 type="checkbox"
                 checked={switchState}
-                onChange={handleOnChange}
+                onChange={handleChange}
             />
         </label>
     );
