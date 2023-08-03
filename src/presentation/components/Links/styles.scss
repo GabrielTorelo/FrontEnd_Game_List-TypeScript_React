@@ -1,14 +1,4 @@
 @import "../../styles/icons.scss";
-@import "../../styles/colors.scss";
-
-@mixin iconStyle($margin, $image) {
-    width: 4vh;
-    height: 4vh;
-    margin-right: $margin;
-    background-image: url($image);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 .links {
     display: flex;
@@ -25,17 +15,5 @@
 
     .postman {
         @include iconStyle(0, $iconPostman);
-    }
-
-    @media (prefers-color-scheme: light) {
-        .gitHub {
-            @include iconStyle(2vw, $iconGitHubLight);
-        }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        .gitHub {
-            @include iconStyle(2vw, $iconGitHubDark);
-        }
     }
 }

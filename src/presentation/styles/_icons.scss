@@ -1,17 +1,34 @@
+// Icon Locations //
+$default: "/assets/images/default/";
+$dark: "/assets/images/dark/";
+$light: "/assets/images/light/";
+
+
 /* Logo */
-$iconLogo: "/assets/logo.svg";
+$iconLogo: $default+"logo.svg";
 
 /* ToggleSwitch */
-$iconMoon: "../../assets/default/moon.svg";
-$iconSun: "../../assets/default/sun.svg";
+$iconMoon: $default+"moon.svg";
+$iconSun: $default+"sun.svg";
 
 /* Links */
-$iconGitHubDark: "../../assets/dark/gitHub.svg";
-$iconGitHubLight: "../../assets/light/gitHub.svg";
-$iconGitLab: "../../assets/default/gitLab.svg";
-$iconLinkedIn: "../../assets/default/linkedIn.svg";
-$iconPostman: "../../assets/default/postman.svg";
+$iconGitHubDark: $dark+"gitHub.svg";
+$iconGitHubLight: $light+"gitHub.svg";
+$iconGitLab: $default+"gitLab.svg";
+$iconLinkedIn: $default+"linkedIn.svg";
+$iconPostman: $default+"postman.svg";
 
 /* GameList */
-$iconArrowDownDark: "../../assets/dark/arrowDown.svg";
-$iconArrowDownLight: "../../assets/light/arrowDown.svg";
+$iconArrowDownDark: $dark+"arrowDown.svg";
+$iconArrowDownLight: $light+"arrowDown.svg";
+
+
+// Icon Mixins Styles //
+@mixin iconStyle($margin, $image) {
+    width: 4vh;
+    height: 4vh;
+    margin-right: $margin;
+    background-image: url($image);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
