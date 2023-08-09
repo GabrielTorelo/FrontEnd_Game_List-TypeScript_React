@@ -36,3 +36,10 @@ $iconArrowDownLight: $light+"arrowDown.svg";
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+@mixin iconLoadingStyle($image) {
+    width: 16vh;
+    height: 16vh;
+    margin: auto;
+    background-image: url($image);
+}
