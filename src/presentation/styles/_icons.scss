@@ -28,7 +28,7 @@ $iconArrowDownLight: $light+"arrowDown.svg";
 
 
 // Icon Mixins Styles //
-@mixin iconStyle($margin, $image) {
+@mixin iconFooterStyle($margin, $image) {
     width: 4vh;
     height: 4vh;
     margin-right: $margin;
