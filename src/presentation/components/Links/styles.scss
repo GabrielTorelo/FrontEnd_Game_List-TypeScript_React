@@ -6,14 +6,14 @@
     justify-content: center;
 
     .gitLab {
-        @include iconStyle(2vw, $iconGitLab);
+        @include iconFooterStyle(2vw, $iconGitLab);
     }
 
     .linkedIn {
-        @include iconStyle(2vw, $iconLinkedIn);
+        @include iconFooterStyle(2vw, $iconLinkedIn);
     }
 
     .postman {
-        @include iconStyle(0, $iconPostman);
+        @include iconFooterStyle(0, $iconPostman);
     }
 }
