@@ -4,6 +4,10 @@ $dark: "/assets/images/dark/";
 $light: "/assets/images/light/";
 
 
+/* Loading */
+$iconLoadingDark: $dark+"loading.svg";
+$iconLoadingLight: $light+"loading.svg";
+
 /* Logo */
 $iconLogo: $default+"logo.svg";
 
@@ -24,11 +28,18 @@ $iconArrowDownLight: $light+"arrowDown.svg";
 
 
 // Icon Mixins Styles //
-@mixin iconStyle($margin, $image) {
+@mixin iconFooterStyle($margin, $image) {
     width: 4vh;
     height: 4vh;
     margin-right: $margin;
     background-image: url($image);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+@mixin iconLoadingStyle($image) {
+    width: 16vh;
+    height: 16vh;
+    margin: auto;
+    background-image: url($image);
 }

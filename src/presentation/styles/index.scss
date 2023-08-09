@@ -55,7 +55,11 @@ a {
     }
 
     .gitHub {
-        @include iconStyle(2vw, $iconGitHubLight);
+        @include iconFooterStyle(2vw, $iconGitHubLight);
+    }
+
+    .loading {
+        @include iconLoadingStyle($iconLoadingLight);
     }
 }
 
@@ -79,6 +83,10 @@ a {
     }
 
     .gitHub {
-        @include iconStyle(2vw, $iconGitHubDark);
+        @include iconFooterStyle(2vw, $iconGitHubDark);
+    }
+
+    .loading {
+        @include iconLoadingStyle($iconLoadingDark);
     }
 }
