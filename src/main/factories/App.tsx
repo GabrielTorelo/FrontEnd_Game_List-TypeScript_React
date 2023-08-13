@@ -1,6 +1,6 @@
 import React from "react";
+import ColorSchemeProvider from "./providers/colorSchemeProvider";
 import Routes from "../routes";
-import { ColorSchemeProvider } from "./hooks/colorSchemeProvider";
 import "../../presentation/styles/index.scss"
 
 const App: React.FC = () => {
