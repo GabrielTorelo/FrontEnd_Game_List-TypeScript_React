@@ -7,7 +7,7 @@ export type GameModel = {
 
 export type GameMinModel = GameModel & {
     position: number,
-    isDesc?: boolean,
+    isDesc?: boolean
 };
 
 export type GameShortModel = GameModel & {
@@ -19,8 +19,8 @@ export type GameWrapperModel = {
 };
 
 export type StarRatingModel = {
-    score: number
-    isDesc?: boolean,
+    score: number,
+    isDesc?: boolean
 }
 
 export type GameCollectionModel = GameMinModel[];
