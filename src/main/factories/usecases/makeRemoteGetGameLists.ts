@@ -1,5 +1,5 @@
-import { RemoteGetGameLists } from '../../../data/usecases/remoteGetGameLists';
-import { RemoteGetGamesOfList } from '../../../data/usecases/remoteGetGamesOfList';
+import { RemoteGetGameLists } from '../../../data/usecases/gameList/remoteGetGameLists';
+import { RemoteGetGamesOfList } from '../../../data/usecases/gameList/remoteGetGamesOfList';
 import { GameListIDModel } from '../../../domain/models/gameListModel';
 import { IGetGameLists, IGetGamesOfList } from '../../../domain/usecases/gameList/getGameLists';
 import { makeAxiosHttpClient, makeApiUrl } from '../http';
