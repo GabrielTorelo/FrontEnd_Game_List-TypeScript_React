@@ -1,7 +1,7 @@
-import { IHttpClient, HttpStatusCode } from '../protocols/http/httpClient';
-import { IGetGamesOfList } from '../../domain/usecases/gameList/getGameLists';
-import { AccessDeniedError, UnexpectedError } from '../../domain/errors';
-import { GameCollectionModel } from '../../domain/models/gameModel';
+import { IHttpClient, HttpStatusCode } from '../../protocols/http/httpClient';
+import { IGetGamesOfList } from '../../../domain/usecases/gameList/getGameLists';
+import { AccessDeniedError, UnexpectedError } from '../../../domain/errors';
+import { GameCollectionModel } from '../../../domain/models/gameModel';
 
 export class RemoteGetGamesOfList implements IGetGamesOfList {
     constructor(
