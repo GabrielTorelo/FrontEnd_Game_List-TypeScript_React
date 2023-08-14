@@ -6,15 +6,21 @@ export type GameModel = {
 }
 
 export type GameMinModel = GameModel & {
-    position: number
+    position: number,
+    isDesc?: boolean
 };
 
 export type GameShortModel = GameModel & {
     shortDescription: string
 };
 
+export type GameWrapperModel = {
+    game: GameShortModel
+};
+
 export type StarRatingModel = {
-    score: number
+    score: number,
+    isDesc?: boolean
 }
 
 export type GameCollectionModel = GameMinModel[];
