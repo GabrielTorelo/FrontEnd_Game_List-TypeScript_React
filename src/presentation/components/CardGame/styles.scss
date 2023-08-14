@@ -37,4 +37,25 @@
         margin-left: 3.5%;
         margin-right: 3.5%;
     }
+
+    &.description {
+        height: 63vh;
+
+        &.cardGame {
+            background-color: transparent;
+        }
+
+        .picture {
+            width: 100%;
+            min-height: 75%;
+            margin-top: 0;
+            margin-bottom: auto;
+        }
+
+        h3 {
+            text-align: justify;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
 }
