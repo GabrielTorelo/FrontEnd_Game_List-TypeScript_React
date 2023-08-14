@@ -26,6 +26,9 @@ $iconPostman: $default+"postman.svg";
 $iconArrowDownDark: $dark+"arrowDown.svg";
 $iconArrowDownLight: $light+"arrowDown.svg";
 
+/* GameAbout */
+$iconArrowBackDark: $dark+"arrowBack.svg";
+$iconArrowBackLight: $light+"arrowBack.svg";
 
 // Icon Mixins Styles //
 @mixin iconFooterStyle($margin, $image) {

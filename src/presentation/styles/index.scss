@@ -54,6 +54,10 @@ a {
         background-image: url($iconArrowDownLight);
     }
 
+    .arrowBack {
+        background-image: url($iconArrowBackLight);
+    }
+
     .gitHub {
         @include iconFooterStyle(2vw, $iconGitHubLight);
     }
@@ -80,6 +84,10 @@ a {
 
     .arrowDown {
         background-image: url($iconArrowDownDark);
+    }
+
+    .arrowBack {
+        background-image: url($iconArrowBackDark);
     }
 
     .gitHub {
