@@ -13,6 +13,10 @@ export type GameShortModel = GameModel & {
     shortDescription: string
 };
 
+export type GameWrapperModel = {
+    game: GameShortModel
+};
+
 export type StarRatingModel = {
     score: number
 }
