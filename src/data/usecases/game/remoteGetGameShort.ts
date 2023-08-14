@@ -1,15 +1,15 @@
-import { IHttpClient, HttpStatusCode } from '../protocols/http/httpClient';
-import { IGetGamesOfList } from '../../domain/usecases/gameList/getGameLists';
-import { AccessDeniedError, UnexpectedError } from '../../domain/errors';
-import { GameCollectionModel } from '../../domain/models/gameModel';
+import { IHttpClient, HttpStatusCode } from '../../protocols/http/httpClient';
+import { IGetGameShort } from '../../../domain/usecases/game/getGame';
+import { AccessDeniedError, UnexpectedError } from '../../../domain/errors';
+import { GameShortModel } from '../../../domain/models/gameModel';
 
-export class RemoteGetGamesOfList implements IGetGamesOfList {
+export class RemoteGetGameShort implements IGetGameShort {
     constructor(
         private readonly url: string,
-        private readonly httpClient: IHttpClient<GameCollectionModel>
+        private readonly httpClient: IHttpClient<GameShortModel>
     ) { };
 
-    async get(): Promise<GameCollectionModel> {
+    async get(): Promise<GameShortModel> {
         const httpResponse = await this.httpClient.request({
             url: this.url,
             method: 'get'
