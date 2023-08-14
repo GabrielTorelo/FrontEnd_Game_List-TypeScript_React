@@ -31,7 +31,7 @@ body {
     }
 }
 
-a {
+a, h3 {
     text-decoration: none;
 }
 
@@ -39,13 +39,24 @@ a {
     background-color: $lightBackground;
     color: $lightTexts;
 
-    .gameList {
+    h2 {
+        color: $lightTexts;
+    }
+
+    .gameList, .gameAbout {
         background-color: $lightListBgFrame;
     }
 
+    .button {
+        background-color: $lightBgButton;
+        border: 2px solid $lightTexts;
+    }
+
     .gameListTop,
+    .gameAboutTop,
     .header,
     .footer,
+    .gameDesc,
     .cardGame {
         background-color: $lightGameTopListFrame;
     }
@@ -71,13 +82,23 @@ a {
     background-color: $darkBackground;
     color: $darkTexts;
 
-    .gameList {
+    h2 {
+        color: $darkTexts;
+    }
+
+    .gameList, .gameAbout {
         background-color: $darkListBgFrame;
     }
 
+    .button {
+        background-color: $darkBgButton;
+    }
+
     .gameListTop,
+    .gameAboutTop,
     .header,
     .footer,
+    .gameDesc,
     .cardGame {
         background-color: $darkGameTopListFrame;
     }
