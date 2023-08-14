@@ -1,19 +1,23 @@
 /* Colors */
+$ghostWhite: #F8F9Fa;
 $whiteSmoke: #F1F0F0;
-$richBlack: #0D1321;
 $platinum: #E5E5E5;
 $timberwolf: #D5D4D4;
+$deepSpace: #415A77;
 $charcoal: #374151;
 $gunmetal: #212938;
+$richBlack: #0D1321;
 
 /* Light Theme */
 $lightBackground: $whiteSmoke;
 $lightTexts: $richBlack;
 $lightListBgFrame: $platinum;
+$lightBgButton: $ghostWhite;
 $lightGameTopListFrame: $timberwolf;
 
 /* Dark Theme */
 $darkBackground: $charcoal;
 $darkTexts: $whiteSmoke;
 $darkListBgFrame: $gunmetal;
+$darkBgButton: $deepSpace;
 $darkGameTopListFrame: $richBlack;
