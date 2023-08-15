@@ -1,5 +1,5 @@
 export { default as CardGame } from './CardGame';
-// export { default as CardGameAbout } from './CardGameAbout';
+export { default as CardGameAbout } from './CardGameAbout';
 export { default as CardGameList } from './CardGameList';
 // export { default as CardGameMoreAbout } from './CardGameMoreAbout';
 export { default as Footer } from './Footer';
